@@ -1,0 +1,33 @@
+{
+  "name": "skynet",
+  "version": "0.0.1",
+  "description": "A framework for slack bots",
+  "main": "server.js",
+  "engine": {
+    "node": "0.12.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnhof/skynet.git"
+  },
+  "keywords": [
+    "slack"
+  ],
+  "author": "John Hofrichter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnhof/skynet/issues"
+  },
+  "homepage": "https://github.com/johnhof/skynet#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "koa": "^0.21.0",
+    "koa-bodyparser": "^2.0.0",
+    "lodash": "^3.10.0",
+    "request": "^2.58.0"
+  }
+}
