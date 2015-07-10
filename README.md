@@ -33,6 +33,20 @@ A framework for slack bots
 
 Keep in mind that bots are routed by the POST'ed token
 
+# Utilities
+
+A few utilities have been added for convenience
+
+```javascript
+module.exports = function *() {
+  if (this.request.body.text ==='hello bot') {
+    this.respond('hello human'); // sends the text as { text: text } (required for slack parsing)
+  } else {
+    this.error(400, 'OH NO!') // sends the error as { error: text } (ignored by slack, for testing only)
+  }
+}
+```
+
 
 # Author
 
